@@ -9,16 +9,15 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
-  const base = import.meta.env.BASE_URL;
 
 const games = [
   {
     id: 1,
     title: "Goblin Cave",
-    loaderUrl: `${base}GoblinCave.loader.js`,
-    dataUrl: `${base}GoblinCave.data`,
-    frameworkUrl: `${base}GoblinCave.framework.js`,
-    codeUrl: `${base}GoblinCave.wasm`,
+    loaderUrl: `./GoblinCave.loader.js`,
+    dataUrl: `./GoblinCave.data`,
+    frameworkUrl: `./GoblinCave.framework.js`,
+    codeUrl: `./GoblinCave.wasm`,
   },
 ];
   const [windows, setWindows] = useState([
