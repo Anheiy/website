@@ -14,22 +14,13 @@ function ArcadePage({}) {
       id: 1,
       title: "Goblin Cave",
       loaderUrl: "./GoblinCave.loader.js",
-      dataUrl: "./GoblinCave.data.unityweb",
-      frameworkUrl: "./GoblinCave.framework.js.unityweb",
-      codeUrl: "./GoblinCave.wasm.unityweb",
-    },
-    {
-      id: 2,
-      title: "I Will Deliver",
-      loaderUrl: "./I_Will_Deliver.loader.js",
-      dataUrl: "./I_Will_Deliver.data.gz",
-      frameworkUrl: "./I_Will_Deliver.framework.js.gz",
-      codeUrl: "./I_Will_Deliver.wasm.gz",
+      dataUrl: "./GoblinCave.data",
+      frameworkUrl: "./GoblinCave.framework.js",
+      codeUrl: "./GoblinCave.wasm",
     },
   ];
   const [windows, setWindows] = useState([
-    { id: 1, title: "I Will Deliver", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[1]} />},
-    { id: 2, title: "Goblin Cave", x: 30, y: 250,width: 1100, height: 700, visible: false, z: 2,content: <GamePage id={2} game={games[2]}/>},
+    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[1]} />},,
 ]);
 const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
