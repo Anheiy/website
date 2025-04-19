@@ -9,16 +9,18 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
-  const games = [
-    {
-      id: 1,
-      title: "Goblin Cave",
-      loaderUrl: "./GoblinCave.loader.js",
-      dataUrl: "./GoblinCave.data",
-      frameworkUrl: "./GoblinCave.framework.js",
-      codeUrl: "./GoblinCave.wasm",
-    },
-  ];
+  const base = process.env.PUBLIC_URL || "";
+
+const games = [
+  {
+    id: 1,
+    title: "Goblin Cave",
+    loaderUrl: `${base}/GoblinCave.loader.js`,
+    dataUrl: `${base}/GoblinCave.data`,
+    frameworkUrl: `${base}/GoblinCave.framework.js`,
+    codeUrl: `${base}/GoblinCave.wasm`,
+  },
+];
   const [windows, setWindows] = useState([
     { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[1]} />},,
 ]);
