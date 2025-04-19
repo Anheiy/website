@@ -9,7 +9,7 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
-  const base = import.meta.env.BASE_URL || process.env.PUBLIC_URL || "./";
+  const base = "./website/";
   const games = [
     {
       id: 1,
