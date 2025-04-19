@@ -13,18 +13,18 @@ function ArcadePage({}) {
     {
       id: 1,
       title: "Goblin Cave",
-      loaderUrl: "/GoblinCave.loader.js",
-      dataUrl: "/GoblinCave.data.unityweb",
-      frameworkUrl: "/GoblinCave.framework.js.unityweb",
-      codeUrl: "/GoblinCave.wasm.unityweb",
+      loaderUrl: "./GoblinCave.loader.js",
+      dataUrl: "./GoblinCave.data.unityweb",
+      frameworkUrl: "./GoblinCave.framework.js.unityweb",
+      codeUrl: "./GoblinCave.wasm.unityweb",
     },
     {
       id: 2,
       title: "I Will Deliver",
-      loaderUrl: "/I_Will_Deliver.loader.js",
-      dataUrl: "/I_Will_Deliver.data.gz",
-      frameworkUrl: "/I_Will_Deliver.framework.js.gz",
-      codeUrl: "/I_Will_Deliver.wasm.gz",
+      loaderUrl: "./I_Will_Deliver.loader.js",
+      dataUrl: "./I_Will_Deliver.data.gz",
+      frameworkUrl: "./I_Will_Deliver.framework.js.gz",
+      codeUrl: "./I_Will_Deliver.wasm.gz",
     },
   ];
   const [windows, setWindows] = useState([
@@ -126,7 +126,7 @@ const handleDragStart = ({ active }) => {
             <div className="flex mt-4 ml-5 space-x-5 ">
             {windows.map((win) => 
             (
-                <Icon key={win.id} icon_path = "/vite.svg" name={win.title} size={128} onToggle={() => toggleWindowVisibility(win.title)} />
+                <Icon key={win.id} icon_path = "./vite.svg" name={win.title} size={128} onToggle={() => toggleWindowVisibility(win.title)} />
             ))}
             </div>
         </DndContext>
