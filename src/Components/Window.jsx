@@ -18,7 +18,7 @@ function Window({ id, title, x, y, visible, content, onToggle, width, height, z 
             <div className="flex items-center bg-blue-700 w-window h-8 shadow-sm shadow-slate-500">
                 {/* Drag handle only here */}
                 <div className={`flex-1 flex items-center ${isDragging ? "cursor-grabbing" : "cursor-grab"} select-none`}{...listeners}{...attributes}>
-                    <img src="/itchio.png" className="size-4 ml-2" />
+                    <img src="./itchio.png" className="size-4 ml-2" />
                     <div className="text-white font-Jersey10 ml-2 text-xl">{title}</div>
                 </div>
                 <button onClick={onToggle}className="mr-2 size-5 text-white font-Jersey10 flex items-center justify-center">
