@@ -9,22 +9,23 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
+  const base = import.meta.env.BASE_URL || process.env.PUBLIC_URL || "./";
   const games = [
     {
       id: 1,
-      title: "Goblin Cave",
-      loaderUrl: "./GoblinCave.loader.js",
-      dataUrl: "./GoblinCave.data.unityweb",
-      frameworkUrl: "./GoblinCave.framework.js.unityweb",
-      codeUrl: "./GoblinCave.wasm.unityweb",
+      title: base + "Goblin Cave",
+      loaderUrl: base +"./GoblinCave.loader.js",
+      dataUrl: base +"./GoblinCave.data.unityweb",
+      frameworkUrl: base +"./GoblinCave.framework.js.unityweb",
+      codeUrl: base +"./GoblinCave.wasm.unityweb",
     },
     {
       id: 2,
-      title: "I Will Deliver",
-      loaderUrl: "./I_Will_Deliver.loader.js",
-      dataUrl: "./I_Will_Deliver.data.gz",
-      frameworkUrl: "./I_Will_Deliver.framework.js.gz",
-      codeUrl: "./I_Will_Deliver.wasm.gz",
+      title: base +"I Will Deliver",
+      loaderUrl: base +"./I_Will_Deliver.loader.js",
+      dataUrl: base +"./I_Will_Deliver.data.gz",
+      frameworkUrl: base +"./I_Will_Deliver.framework.js.gz",
+      codeUrl: base +"./I_Will_Deliver.wasm.gz",
     },
   ];
   const [windows, setWindows] = useState([
