@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 function GamePage({visible = true, game = {
     id: 0,
-    loaderUrl: "/GoblinCave.loader.js",
-    dataUrl: "/GoblinCave.data.unityweb",
-    frameworkUrl: "/GoblinCave.framework.js.unityweb",
-    codeUrl: "/GoblinCave.wasm.unityweb",
+    loaderUrl: "./GoblinCave.loader.js",
+    dataUrl: "./GoblinCave.data.unityweb",
+    frameworkUrl: "./GoblinCave.framework.js.unityweb",
+    codeUrl: "./GoblinCave.wasm.unityweb",
   }})
 {
     const { unityProvider, unload, isLoaded } = useUnityContext(game);
