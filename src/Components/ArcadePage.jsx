@@ -9,19 +9,18 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
-
   const games = [
     {
-      id: 1,
+      id: 0,
       title: "Goblin Cave",
-      loaderUrl: "https://anheiy.github.io/website/GoblinCave.loader.js",  // Manually set correct path
-      dataUrl: "https://anheiy.github.io/website/GoblinCave.data",
-      frameworkUrl: "https://anheiy.github.io/website/GoblinCave.framework.js",
-      codeUrl: "https://anheiy.github.io/website/GoblinCave.wasm",
+      loaderUrl: "./GoblinCave.loader.js",
+      dataUrl: "./GoblinCave.data",
+      frameworkUrl: "./GoblinCave.framework.js",
+      codeUrl: "./GoblinCave.wasm",
     },
   ];
   const [windows, setWindows] = useState([
-    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[1]} />},,
+    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[0]} />},,
 ]);
 const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
