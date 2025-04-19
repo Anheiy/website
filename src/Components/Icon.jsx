@@ -1,6 +1,6 @@
 
 
-function Icon({ name = "", onToggle = () => {}, size = 64, icon_path = "/react.svg" }) {
+function Icon({ name = "", onToggle = () => {}, size = 64, icon_path = "src/assets/builds/react.svg" }) {
     return (
         <button onClick={onToggle} className="flex flex-col items-center justify-center w-[80px]">
             <div className={`flex flex-col items-center w-full`}>
