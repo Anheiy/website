@@ -15,10 +15,10 @@ const games = [
   {
     id: 1,
     title: "Goblin Cave",
-    loaderUrl: `${base}/GoblinCave.loader.js`,
-    dataUrl: `${base}/GoblinCave.data`,
-    frameworkUrl: `${base}/GoblinCave.framework.js`,
-    codeUrl: `${base}/GoblinCave.wasm`,
+    loaderUrl: `${base}GoblinCave.loader.js`,
+    dataUrl: `${base}GoblinCave.data`,
+    frameworkUrl: `${base}GoblinCave.framework.js`,
+    codeUrl: `${base}GoblinCave.wasm`,
   },
 ];
   const [windows, setWindows] = useState([
