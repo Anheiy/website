@@ -9,7 +9,7 @@ import Icon from "./Icon";
 
 
 function ArcadePage({}) {
-  const base = "./website/";
+  const base = "/website/";
   const games = [
     {
       id: 1,
