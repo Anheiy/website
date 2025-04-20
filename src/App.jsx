@@ -9,37 +9,47 @@ import WelcomePage from "./Components/WelcomePage";
 import {restrictToWindowEdges } from "@dnd-kit/modifiers";
 import LinksPage from "./Components/LinksPage";
 import ArcadePage from "./Components/ArcadePage";
-
+import {Howl, Howler} from 'howler';
 
 function App() {
     const [windows, setWindows] = useState([
-        { id: 1, title: "About", x: 30, y: 250, width: 600, height: 400, visible: false, z: 1, content: <AboutPage/>},
-        { id: 2, title: "Projects", x: 30, y: 100,width: 800, height: 600, visible: false, z: 2,content: <ProjectPage/>},
-        { id: 3, title: "Links", x: 30, y: 300, width: 700, height: 400, visible: false, z: 3,content: <LinksPage/> },
-        { id: 4, title: "Welcome.txt", x: 30, y: 50, width: 700, height: 400, visible: false, z: 4,content: <WelcomePage/> },
-        { id: 5, title: "The Arcade", x: 30, y: 50, width: 1600, height: 800, visible: false, z: 4,content: null }
+        { id: 1, title: "About", x: 30, y: 250, width: 600, height: 400, visible: false, z: 1, content: <AboutPage/>, openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 2, title: "Projects", x: 30, y: 100,width: 800, height: 600, visible: false, z: 2,content: <ProjectPage/>, openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 3, title: "Links", x: 30, y: 300, width: 700, height: 400, visible: false, z: 3,content: <LinksPage/>, openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 4, title: "Welcome.txt", x: 30, y: 50, width: 700, height: 400, visible: false, z: 4,content: <WelcomePage/>, openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 5, title: "The Arcade", x: 30, y: 50, width: 1600, height: 800, visible: false, z: 4,content: null, openSound: new Howl({ src: ['./jingle.wav'] })}
     ]);
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    });
-    const maxZ = useRef(10);
+    const openSound = useRef();
+    const closeSound = useRef();
+
     useEffect(() => {
-        function handleResize() {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight
-            });
-        };
-
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
+      openSound.current = new Howl({ src: ['./open.wav'] });
+      closeSound.current = new Howl({ src: ['./close.wav'] });
     }, []);
-
+        const [windowSize, setWindowSize] = useState({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+    const maxZ = useRef(10);
     const toggleWindowVisibility = (title) => {
         setWindows(prev =>
-            prev.map(win =>
-                win.title === title ? { ...win, visible: !win.visible,  } : win
+            prev.map(win => 
+              { if(win.title === title)
+                {
+                  if(!win.visible == true)
+                  {
+                    openSound.current = win.openSound;
+                    openSound.current.play();
+                  }
+                  else
+                    closeSound.current.play();
+                  return { ...win, visible: !win.visible,  };
+                }
+                else 
+                {
+                  return win;
+                }
+              }
             )
         );
     };
@@ -66,6 +76,19 @@ function App() {
           )
         );
       };
+    useEffect(() => {
+        function handleResize() {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    
     return (
         <DndContext onDragEnd={handleDragEnd} onDragStart ={handleDragStart}   modifiers={[restrictToWindowEdges]}>
             {windows.map((win) => (

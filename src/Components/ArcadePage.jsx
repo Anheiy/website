@@ -20,8 +20,15 @@ function ArcadePage({}) {
     },
   ];
   const [windows, setWindows] = useState([
-    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[0]} />},,
-]);
+    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[0]} />,  openSound: new Howl({ src: ['./open.wav'] })}
+  ]);
+  const openSound = useRef();
+    const closeSound = useRef();
+
+    useEffect(() => {
+      openSound.current = new Howl({ src: ['./open.wav'] });
+      closeSound.current = new Howl({ src: ['./close.wav'] });
+    }, []);
 const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -40,11 +47,26 @@ useEffect(() => {
 }, []);
 
 const toggleWindowVisibility = (title) => {
-    setWindows(prev =>
-        prev.map(win =>
-            win.title === title ? { ...win, visible: !win.visible,  } : win
-        )
-    );
+  setWindows(prev =>
+      prev.map(win => 
+        { if(win.title === title)
+          {
+            if(!win.visible == true)
+            {
+              openSound.current = win.openSound;
+              openSound.current.play();
+            }
+            else
+              closeSound.current.play();
+            return { ...win, visible: !win.visible,  };
+          }
+          else 
+          {
+            return win;
+          }
+        }
+      )
+  );
 };
 const handleDragStart = ({ active }) => {
     setWindows(prev => {
