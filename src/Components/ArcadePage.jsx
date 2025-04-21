@@ -20,9 +20,9 @@ function ArcadePage({}) {
     },
   ];
   const [windows, setWindows] = useState([
-    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, content: <GamePage id={1} game={games[0]} />,  openSound: new Howl({ src: ['./open.wav'] })}
+    { id: 1, title: "Goblin Cave", x: 30, y: 250, width: 1100, height: 700, visible: false, z: 1, icon_path:"./projects/goblin_cave.png", content: <GamePage id={1} game={games[0]} />,  openSound: new Howl({ src: ['./open.wav'] })}
   ]);
-  const openSound = useRef();
+    const openSound = useRef();
     const closeSound = useRef();
 
     useEffect(() => {
@@ -94,7 +94,7 @@ const handleDragStart = ({ active }) => {
 
   return (
     <div>
-          <div className="h-full pl-4 whitespace-pre-wrap font-Jersey25 mt-3">       
+          <div className="pl-4 font-Jersey25">       
             <div className="text-4xl text-center">         
                 <span className="bg-red-500">W</span>         
                 <span className="bg-orange-500">E</span>         
@@ -118,7 +118,8 @@ const handleDragStart = ({ active }) => {
                 <span className="bg-yellow-500">D</span>         
                 <span className="bg-green-500">E</span>       
             </div>
-            </div>
+            <div className="text-center text-xl">This will hold little games you can play! some will be exclusive to this website!</div>
+      </div> 
       <div className="flex">
       <DndContext onDragEnd={handleDragEnd} onDragStart ={handleDragStart}   modifiers={[restrictToWindowEdges]}>
             {windows.map((win) => (
@@ -132,14 +133,16 @@ const handleDragStart = ({ active }) => {
                     height={(windowSize.width >= win.width) ? win.height : windowSize.width/windowSize.height * win.height * 0.8}
                     visible={win.visible}
                     content={win.content}
+                    bgColor={"bg-white"}
+                    icon_path={win.icon_path}
                     z={win.z}
                     onToggle={() => toggleWindowVisibility(win.title)}
                 />
             ))}
-            <div className="flex mt-4 ml-5 space-x-5 ">
+            <div className="flex mt-4 ml-5 space-x-5">
             {windows.map((win) => 
             (
-                <Icon key={win.id} icon_path = "./vite.svg" name={win.title} size={128} onToggle={() => toggleWindowVisibility(win.title)} />
+                <Icon key={win.id} icon_path = {win.icon_path} name={win.title} size={128} onToggle={() => toggleWindowVisibility(win.title)} />
             ))}
             </div>
         </DndContext>

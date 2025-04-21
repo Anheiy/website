@@ -47,7 +47,7 @@ function ProjectsPage()
                 This project taught me a lot about how to efficiently work with a team, how to use Git and Godot. 
                 Even though I did not know how to use Git or Godot before the project I learned how to fast and ended up contributing <b>30%</b> of the code!
                 I also had to <b>prepare a workshop</b> on GDScript which helped a lot of my team understand the language!</div>}
-            image={"./placeholder.png"}
+            image={"./projects/citizen_jane.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -68,7 +68,7 @@ function ProjectsPage()
                             Currently the game is <b>feature complete</b> and all thats left is polish and content which I expect will take up a bulk of time. 
                             I plan to release this game on <b>Steam</b> in the coming years (I currently have a page however its not up yet). The gameplay is playable below!
             </div>}
-            image={"./placeholder.png"}
+            image={"./projects/goblin_cave.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -88,7 +88,7 @@ function ProjectsPage()
                             The asthetic I wanted to go with was <b>webcore</b> as its very nostalgic for me, going through the internet on a beat up laptop.
                             I genuinely thought React was harder than base <b>HTML, CSS, & Javascript</b> but it turns out its quite the contrary. 
             </div>}
-            image={"./placeholder.png"}
+            image={"./projects/personal_website.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -109,7 +109,7 @@ function ProjectsPage()
                         The competition was fierce, 900 people submitted games. Our team ended up placing <b>66th/900</b>. 
                         We ended up gettin such nice comments on how some people got emotional playing it which was nice to hear.
             </div>}
-            image={"./placeholder.png"}
+            image={"./projects/carolines_basement.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -124,13 +124,13 @@ function ProjectsPage()
             <div className="flex mt-2">
             <Project
             name={<div>I Will Deliver</div>}
-            description={<div>I really enjoy challenging myself so for my second game I told myself I will make a game in only <b>1 month and release it</b>. 
+            description={<div>I really enjoy challenging myself so for my second game I told myself I would make a game in only <b>1 month and release it</b>. 
                         I decided a arcade score based game would be easy enough to reach my deadline and I ended up being right. 
-                        The deadline forced me to make decisions faster and I learned how to create in a <b>fast paced enviroment</b> (also started me love for game jams...).
-                        This is also where I learned of the dreaded "scope creep". I started to add <b>online leaderboards</b> to create competition. 
-                        I added <b>android support</b> and published it onto the platform (currently unavailable due to android asking me to update it and me not finding the time!)
+                        The deadline forced me to make decisions faster and I learned how to create in a <b>fast paced enviroment</b> (also started my love for game jams...).
+                        This is also where I first faced "scope creep". I started to add <b>online leaderboards</b> to create competition and then
+                        I added <b>android support</b> and published it onto the platform (currently unavailable due to android asking me to update it and me not finding the time!).
             </div>}
-            image={"./placeholder.png"}
+            image={"./projects/i_will_deliver.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -152,7 +152,7 @@ function ProjectsPage()
                         I was working on a multiplayer 3D game at the time and wanted to learn how to make a event system and so I did in this project! 
                         This game taught me a lot about scriptable objects and is invaluable to my current project "The Goblin Cave"
             </div>}
-            image={"./placeholder.png"}
+            image={"./projects/citybuilder.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -172,7 +172,7 @@ function ProjectsPage()
                         The game is quite more forgiving than others due to the ability to course correct slightly with the air dash, and it was my goal to make a more beginner friendly game! 
                         Whenever I showcase my games this game often gets played the most due to its pick up and play nature.
                         </div>}
-            image={"./placeholder.png"}
+            image={"./projects/rocket_ham.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">
@@ -195,7 +195,7 @@ function ProjectsPage()
                             It really was made of rubberbands and glue! But it turned out pretty good I'm proud of what I accomplished with such little skills.
                             The power of drive!
                         </div>}
-            image={"./placeholder.png"}
+            image={"./projects/one_seed.png"}
             />
             </div>
             <div className="flex m-4 space-x-2 font-Jersey10">

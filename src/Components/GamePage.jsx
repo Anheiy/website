@@ -36,7 +36,7 @@ function GamePage({visible = true, game = {
                 
             </div>
           )} 
-          <div className="flex justify-center font-Jersey10 text-4xl">Have Fun!</div>    
+          <div className="flex justify-center font-Jersey10 text-4xl">{game.discription}</div>    
         </div>
     );
 }
