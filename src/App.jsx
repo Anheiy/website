@@ -13,10 +13,10 @@ import {Howl, Howler} from 'howler';
 
 function App() {
     const [windows, setWindows] = useState([
-        { id: 1, title: "About", x: 30, y: 250, width: 600, height: 400, visible: false, z: 1, icon_path:"./icons/txt_file.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
-        { id: 2, title: "Projects", x: 30, y: 100,width: 800, height: 600, visible: false, z: 2,icon_path:"./icons/folder.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 1, title: "Welcome.txt", x: 30, y: 50, width: 700, height: 400, visible: false, z: 4,icon_path:"./icons/txt_file.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 2, title: "About.txt", x: 30, y: 250, width: 600, height: 400, visible: false, z: 1, icon_path:"./icons/txt_file.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
         { id: 3, title: "Links", x: 30, y: 300, width: 700, height: 400, visible: false, z: 3,icon_path:"./icons/links.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
-        { id: 4, title: "Welcome.txt", x: 30, y: 50, width: 700, height: 400, visible: false, z: 4,icon_path:"./icons/txt_file.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
+        { id: 4, title: "Projects", x: 30, y: 100,width: 800, height: 600, visible: false, z: 2,icon_path:"./icons/folder.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
         { id: 5, title: "The Arcade", x: 30, y: 50, width: 1600, height: 800, visible: false, z: 4,icon_path:"./icons/folder.png", bgColor: "bg-slate-600", openSound: new Howl({ src: ['./jingle.wav'] })}
     ]);
     const openSound = useRef();
@@ -106,7 +106,7 @@ function App() {
                     content={
   win.title === "The Arcade"
     ? <ArcadePage visible={win.visible} />
-    : win.title === "About"
+    : win.title === "About.txt"
       ? <AboutPage />
       : win.title === "Projects"
         ? <ProjectPage />
