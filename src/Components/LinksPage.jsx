@@ -40,7 +40,22 @@ function LinksPage()
             <div className="flex space-x-2 place-items-center"><FaLink className="fill-gray-500 size-8"/><a href="https://freesound.org/" target="_blank" className=" hover:text-blue-300">freesound.org</a></div>
             <div className="flex space-x-2 place-items-center"><FaLink className="fill-gray-500 size-8"/><a href="https://sonniss.com/gameaudiogdc/" target="_blank" className=" hover:text-blue-300">Sonniss GDC</a></div>
             <ol className="list-disc list-inside text-gray-500"><li>free assets!</li></ol>
-            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/Cd25H3TwYJE?si=UDmclGTJkXzLOZxp" target="_blank" className=" hover:text-blue-300">Home Safety Hotline</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/Cd25H3TwYJE?si=UDmclGTJkXzLOZxp" target="_blank" className=" hover:text-blue-300">Home Safety Hotline - Story Explained</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=2WMBwFO65J4&t=1s" target="_blank" className=" hover:text-blue-300">aMSa: The Only Yoshi (who could do it) </a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=dmLSJrA0n9w&t=3752s" target="_blank" className=" hover:text-blue-300">there will Never Ever be another Melee player like Hungrybox</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=m6CrWBOxecY" target="_blank" className=" hover:text-blue-300">EVO 2019 Smash Ultimate GRAND FINALS - MkLeo (Joker) Vs. Tweek (Pokemon Trainer)</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=pylzsrcfnUM" target="_blank" className=" hover:text-blue-300">SSC 2019 SSBU - MkLeo (Joker) Vs. Zackray (Wolf, ROB)</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=nJA_CRQZ7Lo" target="_blank" className=" hover:text-blue-300">VoiD Wins a Major - Smash 4</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=OeWm1i9z6OA&t=13s" target="_blank" className=" hover:text-blue-300">There Will NEVER* Be Another Smash Tournament Like Civil War</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=W3id8E34cRQ" target="_blank" className=" hover:text-blue-300">I forced an Ai to play a kids adventure game</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=cZxaW9ma2MQ" target="_blank" className=" hover:text-blue-300">The Story of Competitive Sonic the Fighters (Documentary)</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=9jvVBVcZ0-Y" target="_blank" className=" hover:text-blue-300">Fairy Tail - Opening 1</a></div>
+            <ol className="list-disc list-inside text-gray-500"><li>very good opeing... the show tho...</li></ol>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=PKjbF2a90Fo" target="_blank" className=" hover:text-blue-300">March comes in like a lion - Opening 2 | Goodbye Bystander</a></div>
+            <ol className="list-disc list-inside text-gray-500"><li>its so beautiful man</li></ol>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=MM8RufZr5lw" target="_blank" className=" hover:text-blue-300">Serial Experiments Lain Opening</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=2zMAIbXlzT8" target="_blank" className=" hover:text-blue-300">Hajime no Ippo - Date makes a comeback</a></div>
+            <ol className="list-disc list-inside text-gray-500"><li>"for me to be myself"</li></ol>
         </div>
     </div>
 );

@@ -42,11 +42,11 @@ function ProjectsPage()
             <Project
             name={<div>Citizen Jane <span className="text-xs">Level Up Expo 2025</span></div>}
             description={<div>During the Winter Semester of 2025, Game Devs @ YorkU collaborated on a four-month game project to showcase at Level Up Expo 2025.
-                During the process I was recruited to maintain 10+ programmers as a <b>Programmer Lead</b>.
+                I was recruited to maintain 10+ programmers as a <b>Programmer Lead</b>.
                 We used <b>Git</b> version control to collaborate with each other, Godot as our engine and programmed in <b>GDScript</b>.
-                This project taught me a lot about how to efficiently work with a team, how to use Git and Godot. 
-                Even though I did not know how to use Git or Godot before the project I learned how to fast and ended up contributing <b>30%</b> of the code!
-                I also had to <b>prepare a workshop</b> on GDScript which helped a lot of my team understand the language!</div>}
+                This project taught me a lot about how to efficiently work with a team aswell as how to use Git and Godot. 
+                I used my knowledge in Unity and learned how to use the engine fast contributing <b>30%</b> of the code!
+                I also had to <b>prepare a workshop</b> on GDScript which helped my team understand the language!</div>}
             image={"./projects/citizen_jane.png"}
             />
             </div>
@@ -65,8 +65,8 @@ function ProjectsPage()
             name={<div>Goblin Cave</div>}
             description={<div>In April 2024 I participated in a game jam ran by GDYU, the theme was Goblin and I enjoyed the game so much I continued working on it.
                             Goblin Cave is a <b>Autochess Roguelike</b> game inspired heavily by TFT as I really enjoy that games design and wanted to build off it. 
-                            Currently the game is <b>feature complete</b> and all thats left is polish and content which I expect will take up a bulk of time. 
-                            I plan to release this game on <b>Steam</b> in the coming years (I currently have a page however its not up yet). The gameplay is playable below!
+                            Currently the game is <b>feature complete</b> and all thats left is polish and add content which I expect will take a lot of time. 
+                            I plan to release this game on <b>Steam</b> in the coming years (I currently have a page however its not up yet). The gameplay is playable below! (or in the arcade.)
             </div>}
             image={"./projects/goblin_cave.png"}
             />
@@ -82,11 +82,10 @@ function ProjectsPage()
             <div className="flex mt-2">
             <Project
             name={<div>This Website!</div>}
-            description={<div>I decided it was about time to learn React & the wonders of web development!
-                            I am honestly quite surprised how easy and fun it has been so far, definitely taken aback.
-                            I am writing this before deployment so that might be another can of worms but I'm having so much fun!
-                            The asthetic I wanted to go with was <b>webcore</b> as its very nostalgic for me, going through the internet on a beat up laptop.
-                            I genuinely thought React was harder than base <b>HTML, CSS, & Javascript</b> but it turns out its quite the contrary. 
+            description={<div>In April 2025 I decided it  was about time to learn React & the wonders of web development!
+                            I am quite surprised how easy and fun it has been so far.
+                            The aesthetic I wanted to go with was <b>webcore</b> as its very nostalgic for me.
+                            I've learned a lot during this project and will update it with new and cool things to play and check out as time goes on.
             </div>}
             image={"./projects/personal_website.png"}
             />
@@ -166,10 +165,10 @@ function ProjectsPage()
             <Project
             name={<div>Rocketham</div>}
             description={<div> During 2023, I took a course for school that taught me game design principles and how to write a <b>Game Design Document</b>. 
-                        Up until this point I had never really planned my games much so this came as a shock, but also intrigued me. 
+                        Up until this point I had never really planned my games so this came as a shock, but also intrigued me. 
                         During the <b>final project</b> we were asked to make a GDD and a unity game based off it. 
                         At the time rage games were becoming quite popular so I decided to take advantage of it and build one myself.
-                        The game is quite more forgiving than others due to the ability to course correct slightly with the air dash, and it was my goal to make a more beginner friendly game! 
+                        The game is quite forgiving compared to others due to the ability to course correct slightly with the air dash, and it was my goal to make a more beginner friendly game! 
                         Whenever I showcase my games this game often gets played the most due to its pick up and play nature.
                         </div>}
             image={"./projects/rocket_ham.png"}
