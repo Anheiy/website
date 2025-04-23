@@ -1,12 +1,12 @@
 import { useDraggable } from "@dnd-kit/core";
 
-function Window({ id, title, x, y, visible, content, onToggle, width, height, z =1, bgColor, icon_path = "./itchio.png"}) {
+function Window({ id, title, x, y, visible, content, onToggle, width, height, z =1, bgColor, icon_path = "./itchio.png", pos = "absolute"}) {
     const { attributes, listeners, setNodeRef, transform, isDragging} = useDraggable({ id });
     
     if (!visible) return null;
 
     const style = {
-        position: "absolute",
+        position: pos,
         left: x,
         top: y,
         transform: transform ? `translate(${transform.x}px, ${transform.y}px)` : "none",

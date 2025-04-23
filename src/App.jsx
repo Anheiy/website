@@ -87,7 +87,7 @@ function App() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
+    console.log(windowSize.height)
     
     return (
         <DndContext onDragEnd={handleDragEnd} onDragStart ={handleDragStart}   modifiers={[restrictToWindowEdges]}>
@@ -98,11 +98,12 @@ function App() {
                     title={win.title}
                     x={win.x}
                     y={win.y}
-                    width={windowSize.width >= win.width ? win.width: (windowSize.width*win.width*0.95/win.width)}
-                    height={windowSize.height >= win.height ? win.height : (windowSize.height*win.height*0.95/win.height)}
+                    width={windowSize.width >= win.width ? win.width: (windowSize.width*0.95)}
+                    height={windowSize.height >= win.height ? win.height : (windowSize.height*0.95)}
                     visible={win.visible}
                     bgColor={win.bgColor}
                     icon_path={win.icon_path}
+                    pos = {windowSize.width >= win.width ? "absolute" : "static"}
                     content={
   win.title === "The Arcade"
     ? <ArcadePage visible={win.visible} />
@@ -126,7 +127,7 @@ function App() {
                 <Icon key={win.id} name={win.title} icon_path={win.icon_path}onToggle={() => toggleWindowVisibility(win.title)} />
             ))}
             </div>
-            <Footer />
+            <Footer/>
         </DndContext>
     );
 }
