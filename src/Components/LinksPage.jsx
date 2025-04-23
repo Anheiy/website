@@ -56,6 +56,17 @@ function LinksPage()
             <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=MM8RufZr5lw" target="_blank" className=" hover:text-blue-300">Serial Experiments Lain Opening</a></div>
             <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=2zMAIbXlzT8" target="_blank" className=" hover:text-blue-300">Hajime no Ippo - Date makes a comeback</a></div>
             <ol className="list-disc list-inside text-gray-500"><li>"for me to be myself"</li></ol>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/iavoSO6lOLQ?si=tK3q7OGaYbXPY-Vv" target="_blank" className=" hover:text-blue-300">What IS Nathan Fielder</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=KXMLRcDI9YM&list=PLuylsQI0wsO8iPdzZmDtqP_ViF5L0d05Y" target="_blank" className=" hover:text-blue-300">BUILDING and PROGRAMMING my own FNAF Arcade Game!!!</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=kHoCSK1ikfI" target="_blank" className=" hover:text-blue-300">Reviewing a Bunch of RPG Maker Games</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=L-0gD2jU98Y" target="_blank" className=" hover:text-blue-300">EverymanHYBRID: Explained - Part One</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=D_sACgfX50g" target="_blank" className=" hover:text-blue-300">Marble Hornets: Explained - Season One</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/@donthugmeimscared/videos" target="_blank" className=" hover:text-blue-300">Dont Hug Me I'm Scared</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=ypClJkPhx8o" target="_blank" className=" hover:text-blue-300">One Beer - MF DOOM</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=6S20mJvr4vs&list=OLAK5uy_mao9YHfZtBBTlxeT138lO0prcGHzNSWQM" target="_blank" className=" hover:text-blue-300">IGOR By Tyler, The Creator</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/QICNyBMod6M?si=9m2k2FRIDsn4zrwL" target="_blank" className=" hover:text-blue-300">Lone</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/YuCwP-NbY0s?si=WmkraCCDEqNimKg5" target="_blank" className=" hover:text-blue-300">Addiction</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=d3q_0UP6sck" target="_blank" className=" hover:text-blue-300">solace</a></div>
         </div>
     </div>
 );
