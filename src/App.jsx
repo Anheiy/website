@@ -17,7 +17,7 @@ function App() {
         { id: 2, title: "About.txt", x: 30, y: 250, width: 600, height: 400, visible: false, z: 1, icon_path:"./icons/txt_file.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
         { id: 3, title: "Links", x: 30, y: 300, width: 700, height: 400, visible: false, z: 3,icon_path:"./icons/links.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
         { id: 4, title: "Projects", x: 30, y: 100,width: 800, height: 600, visible: false, z: 2,icon_path:"./icons/folder.png", bgColor: "bg-white", openSound: new Howl({ src: ['./open.wav'] })},
-        { id: 5, title: "The Arcade", x: 30, y: 50, width: 1600, height: 800, visible: false, z: 4,icon_path:"./icons/folder.png", bgColor: "bg-slate-600", openSound: new Howl({ src: ['./jingle.wav'] })}
+        { id: 5, title: "The Arcade", x: 30, y: 50, width: 1600, height: 800, visible: false, z: 4,icon_path:"./icons/folder.png", bgColor: "bg-slate-600", openSound: new Howl({ src: ['./jingle.wav'] })},
     ]);
     const openSound = useRef();
     const closeSound = useRef();
@@ -120,7 +120,7 @@ function App() {
                     onToggle={() => toggleWindowVisibility(win.title)}
                 />
             ))}
-            <div className="flex flex-col mt-4 w-full">
+            <div className="grid grid-flow-row grid-rows-8 h-[calc(100vh-150px)] justify-start gap-x-4 gap-y-24">
             {windows.map((win) => 
             (
                 <Icon key={win.id} name={win.title} icon_path={win.icon_path}onToggle={() => toggleWindowVisibility(win.title)} />
