@@ -103,7 +103,8 @@ function App() {
                     visible={win.visible}
                     bgColor={win.bgColor}
                     icon_path={win.icon_path}
-                    pos = {windowSize.width >= win.width ? "absolute" : "static"}
+                    pos = {windowSize.width >= win.width
+                      ? "absolute" : "static"}
                     content={
   win.title === "The Arcade"
     ? <ArcadePage visible={win.visible} />

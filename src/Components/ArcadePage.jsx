@@ -135,7 +135,7 @@ const handleDragStart = ({ active }) => {
                     content={win.content}
                     bgColor={"bg-white"}
                     icon_path={win.icon_path}
-                    pos = {windowSize.width >= win.width ? "absolute" : "fixed"}
+                    pos = {windowSize.width >= win.width  ? "absolute" : "fixed"}
                     z={win.z}
                     onToggle={() => toggleWindowVisibility(win.title)}
                 />
