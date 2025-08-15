@@ -66,7 +66,7 @@ function ProjectsPage()
             description={<div>In April 2024 I participated in a game jam ran by GDYU, the theme was Goblin and I enjoyed the game so much I continued working on it.
                             Goblin Cave is a <b>Autochess Roguelike</b> game inspired heavily by TFT as I really enjoy that games design and wanted to build off it. 
                             Currently the game is <b>feature complete</b> and all thats left is polish and add content which I expect will take a lot of time. 
-                            I plan to release this game on <b>Steam</b> in the coming years (I currently have a page however its not up yet). The gameplay is playable below! (or in the arcade.)
+                            I plan to release this game on <b>Steam</b> in the coming year. The gameplay is playable below! (or in the arcade.)
             </div>}
             image={"./projects/goblin_cave.png"}
             />
@@ -77,6 +77,7 @@ function ProjectsPage()
                 <Resource name={"C#"}/>
                 <Resource name={"Git"}/>
                 <button className="bg-blue-800  hover:bg-blue-300 text-white text-lg  shadow-md shadow-slate-700 p-2 rounded-md hover:scale-105" onClick={()=> {window.open('https://anheiy.itch.io/the-goblin-cave','_blank');}}>Play Here</button>
+                <button className="bg-blue-800  hover:bg-blue-300 text-white text-lg  shadow-md shadow-slate-700 p-2 rounded-md hover:scale-105" onClick={()=> {window.open('https://store.steampowered.com/app/3563730/Obgob/','_blank');}}>Steam Page</button>
             </div>
             
             <div className="flex mt-2">

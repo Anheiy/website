@@ -72,6 +72,7 @@ function LinksPage()
             <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/ltIAiy6wrxM?si=k1_vj0B0jYh7z-WO" target="_blank" className=" hover:text-blue-300">Strangers Cure My Fear of Abandonment</a></div>
             <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://www.youtube.com/watch?v=IzTqMThRwPc" target="_blank" className=" hover:text-blue-300">Curious George (2006) - Paint Scene</a></div>
             <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/Xyor6cz7jdE?si=SHz6rN8mIJZ3PZa0" target="_blank" className=" hover:text-blue-300">The Painful Love of Death</a></div>
+            <div className="flex space-x-2 place-items-center"><FaYoutube className="fill-red-600 size-8"/><a href="https://youtu.be/zeC9DAanv0k?si=iwSFtn3VdZoGVFEF" target="_blank" className=" hover:text-blue-300">People are irreplaceable.</a></div>
         </div>
     </div>
 );
