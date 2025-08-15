@@ -68,7 +68,7 @@ function About()
 
     </div>
     <div className="text-xl text-zinc-700 mt-4">Education</div>
-    <div>York University - Specialized Honours BA - ITEC</div>
+    <div>York University - Honours BA - ITEC</div>
     </div>
         </div>);
 }
