@@ -22,7 +22,7 @@ function About()
             <li>create <a className="text-blue-500 hover:text-blue-300" href="https://anheiy.itch.io/">video games</a></li>
             <li>develop fun applications</li>
         </ul>
-        <div className="text-lg">interested in me or my work? email at <a className="text-blue-500 hover:text-blue-300" href="mailto:anheiyproduction@gmail.com">anheiyproduction@gmail.com</a></div>
+        <div className="text-lg">interested in me or my work? email at <a className="text-blue-500 hover:text-blue-300" href="mailto:anheiyproduction@gmail.com">anheiycontact@gmail.com</a></div>
     </div>
 
     

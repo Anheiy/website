@@ -37,8 +37,45 @@ function ProjectsPage()
                 <div className="text-4xl text-blue-500 ml-2 font-Jersey25">Projects</div>
             </div>
 
+            <div className="flex mt-2"> 
+                <Project
+                name={<div>Obgob</div>}
+                description={<div>This is essentially a updated version of what at the time was called "The Goblin Cave", I've been working on this project for the past 2.5 years from the time of writing this
+                    I've added new systems like the trait system, and updated old ones like the Artifact system and its finally almost complete. I've released the demo on steam and in about 4-5 months I will release it.
+                    Working on a project for this long is quite the interesting feeling even if you are happy with it. I am proud though, and excited to see how it ends up.
+                </div>}
+                image={"./projects/obgob.jpg"}
+                />
+            </div>
+            <div className="flex m-4 space-x-2 font-Jersey10">
+                <Resource name={"Unity"}/>
+                <Resource name={"Steam"}/>
+                <Resource name={"C#"}/>
+                <Resource name={"Git"}/>
+                <button className="bg-blue-800 hover:bg-blue-300 text-white text-lg shadow-md shadow-slate-700 p-2 rounded-md hover:scale-105" onClick={()=> {window.open('https://anheiy.itch.io/obgob','_blank');}}>Play Demo Here (Browser)</button>
+                <button className="bg-blue-800 hover:bg-blue-300 text-white text-lg shadow-md shadow-slate-700 p-2 rounded-md hover:scale-105" onClick={()=> {window.open('https://store.steampowered.com/app/5490490/Obgob_Demo/','_blank');}}>Play Demo Here (Steam)</button>
+                <button className="bg-blue-800  hover:bg-blue-300 text-white text-lg  shadow-md shadow-slate-700 p-2 rounded-md hover:scale-105" onClick={()=> {window.open('https://youtu.be/T-96JUOpOe0?si=Hr66XCFQlPEcXLuH','_blank');}}>Watch Trailer</button>
+            </div>
 
-            <div className="flex mt-2">
+        <div className="flex mt-2"> 
+            <Project
+            name={<div> Tamagotchi Project <span className="text-xs">WIP</span></div>}
+            description={<div>In the summer of 2026, I got really interested in learning electronics. This idea would not leave my head so I decided to take some time away from my current game project to just mess around with the craft.
+                I decided my first project would be trying to build a Tamagotchi after learning various components and <b>C++</b>. I built this project over the span of 2 months and at the moment it is not fully in the state I want it in. 
+                The main issue is I want it to be portable and for that I need to mess around with batteries and I think that is not something I want to wing so I have taken a break from this project for the time being.
+                The components used were a OLED Screen, 3 Buttons, 1 RTC (Real Time Controller), 1 <b>ESP32</b>, 1 Buzzer, A Bread Board and a bunch of wires! I will revisit this project eventually once I have the soldering and electronics confidence not
+                to blow up my place of living...
+            </div>}
+            image={"./projects/tamagotchi.jpg"}
+            />
+        </div>
+            <div className="flex m-4 space-x-2 font-Jersey10">
+                <Resource name={"Electronics"}/>
+                <Resource name={"ESP32"}/>
+                <Resource name={"C++"}/>
+            </div>
+
+            <div className="flex mt-2"> 
             <Project
             name={<div>Citizen Jane <span className="text-xs">Level Up Expo 2025</span></div>}
             description={<div>During the Winter Semester of 2025, Game Devs @ YorkU collaborated on a four-month game project to showcase at Level Up Expo 2025.

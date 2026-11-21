@@ -26,15 +26,16 @@ function App() {
       openSound.current = new Howl({ src: ['./open.wav'] });
       closeSound.current = new Howl({ src: ['./close.wav'] });
     }, []);
-        const [windowSize, setWindowSize] = useState({
-            width: window.innerWidth,
-            height: window.innerHeight,
-        });
+    const [windowSize, setWindowSize] = useState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
     const maxZ = useRef(10);
     const toggleWindowVisibility = (title) => {
         setWindows(prev =>
             prev.map(win => 
-              { if(win.title === title)
+              { 
+                if(win.title === title)
                 {
                   if(!win.visible == true)
                   {
@@ -58,11 +59,7 @@ function App() {
           maxZ.current += 1
           
           console.log(maxZ);
-          return prev.map(w =>
-            w.id === active.id
-              ? { ...w, z: maxZ.current}
-              : w
-          );
+          return prev.map(w => w.id === active.id ? { ...w, z: maxZ.current} : w);
         });
       };
       
@@ -103,8 +100,7 @@ function App() {
                     visible={win.visible}
                     bgColor={win.bgColor}
                     icon_path={win.icon_path}
-                    pos = {windowSize.width >= win.width
-                      ? "absolute" : "static"}
+                    pos = {windowSize.width >= win.width ? "absolute" : "static"}
                     content={
   win.title === "The Arcade"
     ? <ArcadePage visible={win.visible} />
@@ -131,6 +127,6 @@ function App() {
             <Footer/>
         </DndContext>
     );
-}
+  }
 
 export default App;
